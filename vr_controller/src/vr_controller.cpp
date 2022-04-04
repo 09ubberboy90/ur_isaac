@@ -92,7 +92,6 @@ void publishCommands(std::shared_ptr<VrSubscriber> vr_subscriber)
     
 }
 
-
 int main(int argc, char **argv)
 {
 
@@ -100,8 +99,10 @@ int main(int argc, char **argv)
     rclcpp::NodeOptions node_options;
 
     // This is false for now until we fix the QoS settings in moveit to enable intra process comms
-    node_options.use_intra_process_comms(false);
+    node_options.use_intra_process_comms(true);
     node_ = std::make_shared<rclcpp::Node>("servo_demo_node", node_options);
+    // Pause for RViz to come up. This is necessary in an integrated demo with a single launch file
+    rclcpp::sleep_for(std::chrono::seconds(4));
 
     // Create the planning_scene_monitor. We need to pass this to Servo's constructor, and we should set it up first
     // before initializing any collision objects
@@ -128,7 +129,8 @@ int main(int argc, char **argv)
     // These are the publishers that will send commands to MoveIt Servo. Two command types are supported: JointJog
     // messages which will directly jog the robot in the joint space, and TwistStamped messages which will move the
     // specified link with the commanded Cartesian velocity. In this demo, we jog the end effector link.
-    twist_cmd_pub_ = node_->create_publisher<geometry_msgs::msg::TwistStamped>("servo_demo_node/delta_twist_cmds", 10);
+    // twist_cmd_pub_ = node_->create_publisher<geometry_msgs::msg::TwistStamped>("servo_demo_node/delta_twist_cmds", 10);
+    twist_cmd_pub_ = node_->create_publisher<geometry_msgs::msg::TwistStamped>("moveit_controller/delta_twist_cmds", 10);
 
 
     // Initializing Servo
