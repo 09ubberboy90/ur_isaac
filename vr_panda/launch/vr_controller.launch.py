@@ -47,7 +47,7 @@ def generate_launch_description():
         "ur_description", "config/ur10/default_kinematics.yaml"
     )
     # MoveGroupInterface demo executable
-    moveit_controller = Node(name='moveit_controller',
+    moveit_controller = Node(name='servo_node',
                                package='vr_controller',
                                executable='vr_controller',
                                output='screen',
