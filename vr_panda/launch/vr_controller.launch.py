@@ -37,14 +37,14 @@ def generate_launch_description():
     robot_description = {"robot_description": robot_description_config}
 
     robot_description_semantic_config = load_file(
-        "ur_moveit_config", "srdf/ur10.srdf"
+        "vr_panda", "srdf/ur10.srdf"
     )
     robot_description_semantic = {
         "robot_description_semantic": robot_description_semantic_config
     }
 
     kinematics_yaml = load_yaml(
-        "ur_description", "config/ur10/default_kinematics.yaml"
+        "vr_panda", "config/ur10_default_kinematics.yaml"
     )
     # MoveGroupInterface demo executable
     moveit_controller = Node(name='servo_node',
