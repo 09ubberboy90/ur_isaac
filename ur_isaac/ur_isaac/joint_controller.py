@@ -9,9 +9,6 @@ from rclpy.executors import MultiThreadedExecutor
 
 from std_msgs.msg import Float64MultiArray
 
-JOINT_ANGLE_TOLERANCE = 0.008726646
-HEAD_PAN_ANGLE_TOLERANCE = 0.1396263401
-
 class JointController(Node):
 
     def __init__(self):
