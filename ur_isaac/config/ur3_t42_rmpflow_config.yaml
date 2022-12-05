@@ -88,11 +88,7 @@ body_cylinders:
 body_collision_controllers:
   - name: t42_base_link
     radius: .06
-  - name: finger_2_1
-    radius: .03
-  - name: finger_2_2
-    radius: .03
-  - name: finger_1_1
-    radius: .03
-  - name: finger_1_2
-    radius: .03
+  - name: arduino_pc
+    radius: .06
+  - name: arduino_controller
+    radius: .06
