@@ -1,13 +1,11 @@
 import time
+
 import rclpy
-from rclpy.node import Node
-
-from std_msgs.msg import String
-from sensor_msgs.msg import JointState
-
 from rclpy.executors import MultiThreadedExecutor
+from rclpy.node import Node
+from sensor_msgs.msg import JointState
+from std_msgs.msg import Float64MultiArray, String
 
-from std_msgs.msg import Float64MultiArray
 
 class JointController(Node):
 
