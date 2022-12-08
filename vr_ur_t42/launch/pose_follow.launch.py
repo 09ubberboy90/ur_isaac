@@ -1,16 +1,14 @@
 import os
-from shutil import move
 import sys
+from shutil import move
 
 from ament_index_python.packages import get_package_share_directory
-from launch.actions import IncludeLaunchDescription, TimerAction
+from launch import LaunchDescription, LaunchDescriptionSource
+from launch.actions import (DeclareLaunchArgument, IncludeLaunchDescription,
+                            OpaqueFunction, TimerAction)
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
-
-from launch.actions import OpaqueFunction
-from launch import LaunchDescription, LaunchDescriptionSource
 
 try:
     sys.path.append(get_package_share_directory("ur_t42_utils"))
