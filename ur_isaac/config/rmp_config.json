@@ -1,0 +1,10 @@
+{
+    "end_effector_frame_name": "t42_base_link",
+    "maximum_substep_size" : 0.00334,
+    "ignore_robot_state_updates" : false,
+    "relative_asset_paths": {
+        "robot_description_path" : "ur3_t42_robot_description.yaml",
+        "urdf_path": "../urdfs/ur_t42.urdf",
+        "rmpflow_config_path" : "ur3_t42_rmpflow_config.yaml"
+    }
+}
