@@ -45,7 +45,7 @@ rmp_params:
         accel_norm_eps: .075
         metric_alpha_length_scale: .05
         min_metric_alpha: .01
-        max_metric_scalar: 10000.
+        max_metric_scalar: 1000.
         min_metric_scalar: 2500.
         proximity_metric_boost_scalar: 20.
         proximity_metric_boost_length_scale: .02

@@ -28,7 +28,7 @@ cspace:
 
 root_link: world
 
-default_q: [3.17, -2.0, -1.3, -1.4, 1.57, 0, 0, 0, 0, 0]
+default_q: [-1.57, -1.57, -1.57, -1.57, 1.57, 2.35, 0, 0, 0, 0]
 
 # Most dimensions of the cspace have a direct corresponding element
 # in the URDF. This list of rules defines how unspecified coordinates
