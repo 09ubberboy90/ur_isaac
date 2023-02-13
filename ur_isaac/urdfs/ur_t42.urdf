@@ -292,6 +292,8 @@
       </geometry>
     </collision>
   </link>
+  <link name="gripper_ee"/>
+
   <link name="finger_2_2">
     <inertial>
       <origin xyz="-0.015875 -0.011709 -0.048006"/>
@@ -328,6 +330,11 @@
     <origin rpy="1.57 0 1.57" xyz="0.02655 0.0 -0.059"/>
     <parent link="t42_base_link"/>
     <child link="arduino_controller"/>
+  </joint>
+  <joint name="t42_base_link_to_gripper_ee" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.1 0 0 "/>
+    <parent link="t42_base_link"/>
+    <child link="gripper_ee"/>
   </joint>
   <joint name="swivel_1_to_finger_1_1" type="revolute">
     <origin rpy="-1.57079632679 1.57079632679 0" xyz="-0.016510 -0.026 0.000000"/>
