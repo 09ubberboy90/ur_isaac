@@ -107,22 +107,10 @@ collision_spheres:
       - "center": [0.0, 0.002, -0.025]
         "radius": 0.035
   - t42_base_link:
-      - center: [0.0, 0.0, 0.0]
+      - center: [0.06, 0.0, 0.0]
         radius: 0.06
-  - arduino_controller:
-      - center: [0.0, 0.0, 0.0]
-        radius: 0.03
-      - center: [0.02, 0.0, 0.0]
-        radius: 0.03
-      - center: [-0.02, 0.0, 0.0]
-        radius: 0.03
-  - arduino_pc:
-      - center: [0.0, 0.0, 0.0]
-        radius: 0.015
-      - center: [0.02, 0.0, 0.0]
-        radius: 0.015
-      - center: [-0.02, 0.0, 0.0]
-        radius: 0.015
+      - center: [0.03, 0.0, 0.0]
+        radius: 0.06
   -  finger_1_1:
       - center: [0.0, 0.0, -0.031]
         radius: 0.03
