@@ -1,4 +1,5 @@
 from setuptools import setup
+from glob import glob
 
 package_name = 'ur_isaac'
 
@@ -10,6 +11,9 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/urdfs', glob('urdfs/*.urdf')),
+        ('share/' + package_name + '/config', glob('config/*.*')),
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,
