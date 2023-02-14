@@ -129,9 +129,9 @@
   </ros2_control>
   <link name="t42_base_link">
     <visual>
-      <origin rpy="0 0 1.57" xyz="0.1 -0.035 -0.09"/>
+      <origin rpy="0 0 1.57" xyz="0.14 -0.035 -0.09"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/actuator_block_t42.stl"/>
+        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/actuator_block_t42.stl" scale="1 1.45 1"/>
       </geometry>
       <material name="black">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -148,41 +148,7 @@
     <collision>
       <origin rpy="0 0 1.57" xyz="0.1 -0.035 -0.09"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/actuator_block_t42.stl"/>
-      </geometry>
-    </collision>
-  </link>
-  <link name="arduino_controller">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/arduino_controller.stl"/>
-      </geometry>
-      <material name="black">
-        <color rgba="0.1 0.1 0.1 1"/>
-      </material>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/arduino_controller.stl"/>
-      </geometry>
-    </collision>
-  </link>
-  <link name="arduino_pc">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/arduino_pc.stl"/>
-      </geometry>
-      <material name="black">
-        <color rgba="0.1 0.1 0.1 1"/>
-      </material>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/arduino_pc.stl"/>
+        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/actuator_block_t42.stl" scale="1 1.45 1"/>
       </geometry>
     </collision>
   </link>
@@ -321,16 +287,6 @@
     <parent link="t42_base_link"/>
     <child link="swivel_1"/>
   </joint>
-  <joint name="t42_base_link_to_arduino_pc" type="fixed">
-    <origin rpy="1.57 0 1.57" xyz="0.02655 0.0 0.05153"/>
-    <parent link="t42_base_link"/>
-    <child link="arduino_pc"/>
-  </joint>
-  <joint name="t42_base_link_to_arduino_controller" type="fixed">
-    <origin rpy="1.57 0 1.57" xyz="0.02655 0.0 -0.059"/>
-    <parent link="t42_base_link"/>
-    <child link="arduino_controller"/>
-  </joint>
   <joint name="t42_base_link_to_gripper_ee" type="fixed">
     <origin rpy="0 0 0" xyz="-0.1 0 0 "/>
     <parent link="t42_base_link"/>
@@ -374,7 +330,7 @@
     <dynamics damping="7.0" friction="0.0"/>
   </joint>
   <joint name="tool_to_gripper" type="fixed">
-    <origin rpy="0 1.57 0.785398" xyz="0 0 0.05"/>
+    <origin rpy="0 1.57 0.785398" xyz="0 0 0.09"/>
     <parent link="tool0"/>
     <child link="t42_base_link"/>
   </joint>
