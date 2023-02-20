@@ -80,9 +80,9 @@ canonical_resolve:
 
 body_cylinders:
     - name: base_link
-      pt1: [0, 0, 0.15]
+      pt1: [0, 0, 0.12]
       pt2: [0, 0, 0]
-      radius: .065
+      radius: .15
 
 body_collision_controllers:
   - name: t42_base_link
@@ -101,4 +101,8 @@ body_collision_controllers:
     radius: .03
   - name: finger_2_2
     radius: .03
+  - name: gripper_ee
+    radius: .01
+
+    
 
