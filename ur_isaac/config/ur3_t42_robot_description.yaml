@@ -116,11 +116,14 @@ collision_spheres:
         radius: 0.03
   -  finger_1_2:
       - center: [0.0, 0.0, -0.035]
-        radius: 0.03
+        radius: 0.02
   -  finger_2_1:
       - center: [0.0, 0.0, -0.031]
         radius: 0.03
   -  finger_2_2:
       - center: [0.0, 0.0, -0.035]
-        radius: 0.03
+        radius: 0.02
+  -  gripper_ee:
+      - center: [0.0, 0.0, 0.0]
+        radius: 0.01
 
