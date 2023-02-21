@@ -296,7 +296,7 @@
     <origin rpy="-1.57079632679 1.57079632679 0" xyz="-0.016510 -0.026 0.000000"/>
     <parent link="swivel_1"/>
     <child link="finger_1_1"/>
-    <limit effort="10000" lower="0.0" upper="3" velocity="2"/>
+    <limit effort="10000" lower="0.0" upper="3.1" velocity="2"/>
     <axis xyz="1 0 0"/>
     <dynamics damping="7.0" friction="0.0"/>
   </joint>
@@ -317,7 +317,7 @@
     <origin rpy="1.57079632679 -1.57079632679 0" xyz="-0.016510 0.026 0.0000"/>
     <parent link="swivel_2"/>
     <child link="finger_2_1"/>
-    <limit effort="10000" lower="0.0" upper="3" velocity="2"/>
+    <limit effort="10000" lower="0.0" upper="3.1" velocity="2"/>
     <axis xyz="1 0 0"/>
     <dynamics damping="7.0" friction="0.0"/>
   </joint>
