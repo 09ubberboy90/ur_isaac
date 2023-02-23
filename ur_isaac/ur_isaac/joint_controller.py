@@ -47,8 +47,7 @@ class JointController(Node):
         outgoing = JointState()
         for key, el in self.gripper_names.items():
             outgoing.name.append(key)
-            ## +0.88 is to handle the offset between the 0 position in the simulator and the 0 position in the real world
-            outgoing.position.append((self.joint_states[el]+0.88)*180/np.pi)
+            outgoing.position.append((self.joint_states[el])*180/np.pi)
         self.motor_pub.publish(outgoing)
 
 
