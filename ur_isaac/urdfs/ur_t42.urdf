@@ -330,7 +330,7 @@
     <dynamics damping="7.0" friction="0.0"/>
   </joint>
   <joint name="tool_to_gripper" type="fixed">
-    <origin rpy="0 1.57 2.277" xyz="0 0 0.105"/>
+    <origin rpy="0 1.57 -0.863" xyz="0 0 0.105"/>
     <parent link="tool0"/>
     <child link="t42_base_link"/>
   </joint>
@@ -738,8 +738,8 @@
     <child link="shoulder_link"/>
     <origin rpy="0 0 0" xyz="0 0 0.1519"/>
     <axis xyz="0 0 1"/>
-    <limit effort="56.0" lower="-3.23" upper="1.66" velocity="3.141592653589793"/>
-    <safety_controller k_position="20" k_velocity="0.0" soft_lower_limit="-3.1" soft_upper_limit="1.5"/>
+    <limit effort="56.0" lower="-3.8" upper="1.57" velocity="3.141592653589793"/>
+    <safety_controller k_position="20" k_velocity="0.0" soft_lower_limit="-3.6" soft_upper_limit="1.45"/>
     <dynamics damping="0" friction="0"/>
   </joint>
   <joint name="shoulder_lift_joint" type="revolute">
@@ -765,8 +765,8 @@
     <child link="wrist_1_link"/>
     <origin rpy="0 0 0" xyz="-0.21325 0 0.11235"/>
     <axis xyz="0 0 1"/>
-    <limit effort="12.0" lower="-2.61799" upper="-0.436332" velocity="6.283185307179586"/>
-    <safety_controller k_position="20" k_velocity="0.0" soft_lower_limit="-2.5" soft_upper_limit="-0.40"/>
+    <limit effort="12.0" lower="-1.92" upper="-0.44" velocity="6.283185307179586"/>
+    <safety_controller k_position="20" k_velocity="0.0" soft_lower_limit="-1.80" soft_upper_limit="-0.25"/>
     <dynamics damping="0" friction="0"/>
   </joint>
   <joint name="wrist_2_joint" type="revolute">
