@@ -131,7 +131,7 @@
     <visual>
       <origin rpy="0 0 1.57" xyz="0.16 -0.035 -0.09"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/actuator_block_t42.stl" scale="1 1.7 1"/>
+        <mesh filename="package://t42_gripper_description/meshes/actuator_block_t42.stl" scale="1 1.7 1"/>
       </geometry>
       <material name="black">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -148,7 +148,7 @@
     <collision>
       <origin rpy="0 0 1.57" xyz="0.16 -0.035 -0.09"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/actuator_block_t42.stl" scale="1 1.7 1"/>
+        <mesh filename="package://t42_gripper_description/meshes/actuator_block_t42.stl" scale="1 1.7 1"/>
       </geometry>
     </collision>
   </link>
@@ -159,13 +159,13 @@
       </material>
       <origin rpy="0 1.57 1.57" xyz="-0.016510 0.026 0"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/swivel_t42.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://t42_gripper_description/meshes/swivel_t42.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 1.57 1.57" xyz="-0.016510 0.026 0"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/swivel_t42.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://t42_gripper_description/meshes/swivel_t42.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -182,13 +182,13 @@
       </material>
       <origin xyz="-0.015875 -0.009000 -0.071550"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/proximal_t42.STL" scale="0.025400 0.025400 0.025400"/>
+        <mesh filename="package://t42_gripper_description/meshes/proximal_t42.STL" scale="0.025400 0.025400 0.025400"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="-0.015875 -0.009000 -0.071550"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/proximal_t42.STL" scale="0.025400 0.025400 0.025400"/>
+        <mesh filename="package://t42_gripper_description/meshes/proximal_t42.STL" scale="0.025400 0.025400 0.025400"/>
       </geometry>
     </collision>
   </link>
@@ -206,8 +206,8 @@
       <origin xyz="-0.015875 -0.011709 -0.048006"/>
       <!-- Pointed distal tips -->
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/distal_round_t42_filled.STL" scale="0.001 0.001 0.001"/>
-        <!-- <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/distal_t42.STL" scale="0.025400 0.025400 0.025400" /> -->
+        <mesh filename="package://t42_gripper_description/meshes/distal_round_t42_filled.STL" scale="0.001 0.001 0.001"/>
+        <!-- <mesh filename="package://t42_gripper_description/meshes/distal_t42.STL" scale="0.025400 0.025400 0.025400" /> -->
         <!-- Pointed distal tips -->
       </geometry>
     </visual>
@@ -215,7 +215,7 @@
       <origin xyz="-0.015875 -0.011709 -0.048006"/>
       <!-- Pointed distal tips -->
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/distal_round_t42_filled.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://t42_gripper_description/meshes/distal_round_t42_filled.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -226,13 +226,13 @@
       </material>
       <origin rpy="0 1.57 1.57" xyz="-0.016510 -0.026 0"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/swivel_t42.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://t42_gripper_description/meshes/swivel_t42.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 1.57 1.57" xyz="-0.016510 -0.026 0"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/swivel_t42.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://t42_gripper_description/meshes/swivel_t42.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -248,13 +248,13 @@
       </material>
       <origin xyz="-0.015875 -0.009000 -0.071550"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/proximal_t42.STL" scale="0.025400 0.025400 0.025400"/>
+        <mesh filename="package://t42_gripper_description/meshes/proximal_t42.STL" scale="0.025400 0.025400 0.025400"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="-0.015875 -0.009000 -0.071550"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/proximal_t42.STL" scale="0.025400 0.025400 0.025400"/>
+        <mesh filename="package://t42_gripper_description/meshes/proximal_t42.STL" scale="0.025400 0.025400 0.025400"/>
       </geometry>
     </collision>
   </link>
@@ -272,13 +272,13 @@
       </material>
       <origin xyz="-0.015875 -0.011709 -0.048006"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/distal_round_t42_filled.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://t42_gripper_description/meshes/distal_round_t42_filled.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="-0.015875 -0.011709 -0.048006"/>
       <geometry>
-        <mesh filename="/home/ubb/Documents/Baxter_isaac/ROS2/src/t42_gripper/t42_gripper_description/meshes/distal_round_t42_filled.STL" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://t42_gripper_description/meshes/distal_round_t42_filled.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
